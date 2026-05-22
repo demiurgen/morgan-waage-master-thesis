@@ -77,3 +77,30 @@ The main LoRA preparation configuration used 512x512 resolution.
 - Output directory: `C:/Users/demiurgen/Desktop/LoRA/model`
 - Output name in the available Kohya configuration: `last`
 - Final LoRA filename used in the experiments: `lomoxl6`
+
+- # Flux LoRA Training Settings
+
+This section documents the Flux LoRA used in the Flux workflows.
+
+## LoRA name
+
+- Final LoRA filename/name: `lomoch`
+- Training tool: Fluxgym
+- Base model: `black-forest-labs/FLUX.1-dev`
+- Model type: Flux LoRA
+- File format: safetensors
+- Trigger words: none defined
+
+## Dataset setup
+
+- Dataset folder: `C:\Users\demiurgen\fluxgym\datasets\lomoch`
+- Caption extension: `.txt`
+- Shuffle captions: disabled
+- Keep tokens: 1
+- Resolution: 1024
+- Batch size: 1
+- Number of repeats: 5
+
+## License note
+
+The base model was FLUX.1-dev, which uses the FLUX.1-dev non-commercial license.
