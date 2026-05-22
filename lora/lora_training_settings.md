@@ -17,7 +17,7 @@ Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model name
 
 ### Base model
 
-- Base model: `stabilityai/stable-diffusion-xl-base-1.0`
+- Base model: `stable-diffusion-xl-base-1.0`
 
 ### Dataset setup
 
@@ -83,7 +83,7 @@ Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model name
 
 ### Base model
 
-- Base model: `black-forest-labs/FLUX.1-dev`
+- Base model: `FLUX.1-dev`
 
 ### Dataset setup
 
@@ -95,7 +95,4 @@ Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model name
 - Batch size: 1
 - Number of repeats: 5
 
-### License note
 
-- The Flux LoRA was trained from `FLUX.1-dev`.
-- `FLUX.1-dev` uses the FLUX.1-dev non-commercial license.
