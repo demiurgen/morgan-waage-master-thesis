@@ -1,22 +1,25 @@
 # LoRA Training Settings
 
-This file documents the LoRA training settings available from the Kohya SS configuration files used during LoRA preparation.
+This file documents the LoRA models used in the static asset generation workflows.
 
-The LoRA model used in the experiments was named `lomoxl6`. The available configuration files document the training setup used for LoRA preparation. These settings were used as the basis for the LoRA training process for the SDXL and SD3.5 workflows.
+Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model named `lomoxl6`. The Flux workflows used the LoRA model named `lomoch`.
 
-## Training tool
+## SDXL and SD3.5 LoRA
 
+### LoRA name
+
+- Final LoRA filename/name: `lomoxl6`
 - Training tool: Kohya SS
 - LoRA type: Standard
 - Save format: safetensors
 - Mixed precision: fp16
 - xFormers: enabled
 
-## Base model
+### Base model
 
 - Base model: `stabilityai/stable-diffusion-xl-base-1.0`
 
-## Dataset setup
+### Dataset setup
 
 - Training data directory: `C:/Users/demiurgen/Desktop/LoRA/img`
 - Caption extension: `.txt`
@@ -28,7 +31,7 @@ The LoRA model used in the experiments was named `lomoxl6`. The available config
 - Latent caching: enabled
 - Latent caching to disk: enabled
 
-## Core training settings
+### Core training settings
 
 - Maximum training steps: 1600
 - Epoch setting: 20
@@ -44,7 +47,7 @@ The LoRA model used in the experiments was named `lomoxl6`. The available config
 - Maximum gradient norm: 1
 - Seed: 0
 
-## LoRA network settings
+### LoRA network settings
 
 - Network dimension: 256
 - Network alpha: 256
@@ -54,16 +57,12 @@ The LoRA model used in the experiments was named `lomoxl6`. The available config
 - Convolution dimension: 1
 - Convolution alpha: 1
 
-## Resolution
+### Resolution
 
-Available configuration files show two tested resolutions:
+- Main training resolution: 512x512
+- Additional tested resolution: 256x256
 
-- 512x512
-- 256x256
-
-The main LoRA preparation configuration used 512x512 resolution.
-
-## Data augmentation and captions
+### Data augmentation and captions
 
 - Flip augmentation: disabled
 - Color augmentation: disabled
@@ -72,28 +71,29 @@ The main LoRA preparation configuration used 512x512 resolution.
 - Weighted captions: disabled
 - Caption dropout rate: 0
 
-## Output
+### Output
 
 - Output directory: `C:/Users/demiurgen/Desktop/LoRA/model`
-- Output name in the available Kohya configuration: `last`
+- Output name in the Kohya configuration: `last`
 - Final LoRA filename used in the experiments: `lomoxl6`
 
-- # Flux LoRA Training Settings
+## Flux LoRA
 
-This section documents the Flux LoRA used in the Flux workflows.
-
-## LoRA name
+### LoRA name
 
 - Final LoRA filename/name: `lomoch`
 - Training tool: Fluxgym
-- Base model: `black-forest-labs/FLUX.1-dev`
 - Model type: Flux LoRA
 - File format: safetensors
 - Trigger words: none defined
 
-## Dataset setup
+### Base model
 
-- Dataset folder: `C:\Users\demiurgen\fluxgym\datasets\lomoch`
+- Base model: `black-forest-labs/FLUX.1-dev`
+
+### Dataset setup
+
+- Dataset folder: `C:/Users/demiurgen/fluxgym/datasets/lomoch`
 - Caption extension: `.txt`
 - Shuffle captions: disabled
 - Keep tokens: 1
@@ -101,6 +101,7 @@ This section documents the Flux LoRA used in the Flux workflows.
 - Batch size: 1
 - Number of repeats: 5
 
-## License note
+### License note
 
-The base model was FLUX.1-dev, which uses the FLUX.1-dev non-commercial license.
+- The Flux LoRA was trained from `FLUX.1-dev`.
+- `FLUX.1-dev` uses the FLUX.1-dev non-commercial license.
