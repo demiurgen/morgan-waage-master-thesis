@@ -21,7 +21,7 @@ Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model name
 
 ### Dataset setup
 
-- Training data directory: `C:/Users/demiurgen/Desktop/LoRA/img`
+- Dataset size: 130 images
 - Caption extension: `.txt`
 - Bucket training: enabled
 - Bucket no upscale: enabled
@@ -71,12 +71,6 @@ Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model name
 - Weighted captions: disabled
 - Caption dropout rate: 0
 
-### Output
-
-- Output directory: `C:/Users/demiurgen/Desktop/LoRA/model`
-- Output name in the Kohya configuration: `last`
-- Final LoRA filename used in the experiments: `lomoxl6`
-
 ## Flux LoRA
 
 ### LoRA name
@@ -93,7 +87,7 @@ Two LoRA setups were used. The SDXL and SD3.5 workflows used the LoRA model name
 
 ### Dataset setup
 
-- Dataset folder: `C:/Users/demiurgen/fluxgym/datasets/lomoch`
+- Dataset size: 130 images
 - Caption extension: `.txt`
 - Shuffle captions: disabled
 - Keep tokens: 1
