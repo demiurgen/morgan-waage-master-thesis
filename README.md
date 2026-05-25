@@ -4,13 +4,14 @@ This repository contains supporting material for the master's thesis:
 
 **Using Generative AI Base Models and Techniques for Generating Graphical Assets in 2D Games**
 
-The repository contains prompts, ComfyUI workflow files, workflow mappings, LoRA training settings, and reference input descriptions used in the experimental work.
+The repository contains prompts, ComfyUI workflow files, workflow mappings, base model documentation, LoRA training settings, and reference input descriptions used in the experimental work.
 
 ## Repository structure
 
 - `prompts/` contains the prompt sets used for character, background, object, and animation generation.
 - `workflows/` contains the ComfyUI workflow JSON files used in the experiments.
 - `results_mapping/` maps the workflow IDs used in the thesis to the uploaded workflow files.
+- `models/` documents the base models used in the experiments.
 - `lora/` documents the LoRA training settings used for the static asset workflows.
 - `reference_inputs/` describes the reference images and videos used in guided workflows.
 
