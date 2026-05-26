@@ -9,7 +9,7 @@ All animation outputs were generated at 512x512 pixels with 36 frames at 30 fram
 ## Shared negative prompt
 
 Negative prompt:
-
+Bright color tone, overexposed, static, unclear details, subtitles, style, work, painting, picture, still, overall grayish, worst quality, low quality, JPEG compression artifacts, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn face, deformed, disfigured, limbs with abnormal shapes, fused fingers, motionless scene, messy background, three legs, crowded background, walking backwards
 
 ## Animation prompt 1 - Girl walk cycle
 
