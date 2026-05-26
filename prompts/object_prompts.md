@@ -7,7 +7,7 @@ Each prompt was tested across the static workflow configurations listed in the t
 ## Shared negative prompt
 
 Negative prompt:
-
+(worst quality, low quality:1), blurry, grainy, deformed, extra limbs, extra fingers, long arms, robotic, photorealistic, shiny skin, 3D render, glowing, gradients, complex background, shadows, text, watermark, signature
 
 ## Object prompt 1 - Cactus
 
