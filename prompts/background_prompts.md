@@ -9,7 +9,7 @@ All background outputs were generated at 1024x336 pixels.
 ## Shared negative prompt
 
 Negative prompt:
-
+(worst quality, low quality:1), blurry, grainy, deformed, extra limbs, extra fingers, long arms, robotic, photorealistic, shiny skin, 3D render, glowing, gradients, complex background, shadows, text, watermark, signature
 
 ## Background prompt 1
 
